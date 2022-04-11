@@ -1,12 +1,11 @@
-enablePlugins(ScalaJSPlugin, WorkbenchPlugin)
+ThisBuild / scalaVersion := "2.13.8"
 
-name := "Example"
+ThisBuild / version := "0.1-SNAPSHOT"
 
-version := "0.1-SNAPSHOT"
-
-scalaVersion := "2.11.8"
-
-libraryDependencies ++= Seq(
-  "org.scala-js" %%% "scalajs-dom" % "0.9.1",
-  "com.lihaoyi" %%% "scalatags" % "0.6.1"
-)
+lazy val example = (project in file("."))
+  .enablePlugins(ScalaJSPlugin)
+  .settings(
+    name := "Example",
+    libraryDependencies += "org.scala-js" %%% "scalajs-dom" % "1.1.0",
+    scalaJSUseMainModuleInitializer := true
+  )

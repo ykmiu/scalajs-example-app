@@ -8,15 +8,15 @@ in libraries that are indispensible in being productive working with Scala.js.
 
 To get started, run `sbt ~fastOptJS` in this example project. This should
 download dependencies and prepare the relevant javascript files. If you open
-`localhost:12345/target/scala-2.11/classes/index-dev.html` in your browser, it will show you an animated [Sierpinski
-triangle](http://en.wikipedia.org/wiki/Sierpinski_triangle) ([live demo](http://lihaoyi.github.io/workbench-example-app/triangle.html)). You can then
-edit the application and see the updates be sent live to the browser
-without needing to refresh the page.
+`index.html` in your browser, it will show you an animated [Sierpinski
+triangle](http://en.wikipedia.org/wiki/Sierpinski_triangle). 
 
-## The optimized version
+__Note__: Workbench plugin has been removed- You cannot see updates live in the browser, you needing to refresh the page manually.
 
-Run `sbt fullOptJS` and open up `index-opt.html` for an optimized (~200kb) version
-of the final application, useful for final publication.
+
+# Addtional Branches
+
+These won't work on the latest sbt as workbench is no longer maintained...
 
 ## Dodge the Dots
 
